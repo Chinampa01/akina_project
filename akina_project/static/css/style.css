@@ -1,0 +1,39 @@
+:root {
+    --fuji-white: #F4F7F8;  /* Fondo principal */
+    --asama-blue: #5D8AA8;   /* Encabezados */
+    --volcanic-ash: #4A4A4A; /* Texto */
+    --sakura-blush: #E6B0B8; /* Hover states */
+    --gradient: linear-gradient(165deg,#fff 4%, #E6B0B8 40%, #87CEEB 80%);
+}
+
+.custom-navbar {
+    background: var(--gradient);
+    border-bottom: 2px solid var(--sakura-blush);
+}
+
+.custom-navbar .navbar-brand {
+    color: var(--asama-blue); /* Color del texto del logo */
+    font-weight: bold;
+}
+
+.custom-navbar .navbar-brand:hover{
+    color: var(--sakura-blush); /* Color al pasar el mouse */
+}
+
+.custom-navbar .nav-link {
+    color: var(--volcanic-ash); /* Color de los enlaces */
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: var(--sakura-blush); /* Color al pasar el mouse */
+}
+
+.custom-navbar .nav-link.active {
+    color: var(--asama-blue); /* Color del enlace activo */
+    font-weight: bold;
+}
+
+.custom-nav-akina{
+    color: var(--asama-blue);
+}

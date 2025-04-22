@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-md-6">
+    <h3><pre>{{ exercise.instruction }}</pre></h3>
+    <br>
+    <textarea id="editor">{{ exercise.starter_code }}</textarea>
+    <br>
+    <button id="run-btn" class="btn btn-primary">Ejecutar</button>
+  </div>
+  <div class="col-md-6">
+    <pre id="output" class="bg-dark text-white p-3"></pre>
+  </div>
+</div>
+
+<!-- Añadir al final del archivo -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+<script>
+  const editor = CodeMirror.fromTextArea(
+    document.getElementById('editor'),
+    { lineNumbers: true, mode: 'python' }
+  );
+</script>
